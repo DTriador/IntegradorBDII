@@ -35,29 +35,9 @@ print(d)
 cx_Oracle.init_oracle_client(lib_dir=d)
 
 
-En el archivo billetera.py codificamos las funciones correspondientes para insertar, eliminar y filtrar cada una de las clases creadas anteriormente. Por ejemplo, para insertar un usuario el código es el siguiente:
+En el archivo billetera.py codificamos las funciones correspondientes para insertar, eliminar y filtrar cada una de las clases creadas anteriormente. 
 
-
-
-***def insert_user(self,user_name, user_lastname, user_email, user_password):
-        query = Users.insert_user(
-            user_name=user_name,
-            user_lastname=user_lastname,
-            user_email=user_email,
-            user_password=user_password
-        )
-        return self.connection.execute(query)
-
-Por ultimo realizamos las consultas correspondientes en un archivo llamado Billetera_consultar. Por ejemplo, a la hora de listar los nombres de los usuarios colocamos:
-
-***dataset['USER_NAME'] 
-
-
-En caso de querer filtrar un usuario por una parte de su nombre, escribimos lo siguiente:
-
-***com = data.get_users(user = 'Vil')
-***com
-
+Por ultimo realizamos las consultas correspondientes en un archivo llamado Billetera_consultar. 
 
 Y asi continuamos consultando cada uno de los datos que componen a los usuarios de la billetera virtual, sus transacciones y contactos correspondientes.
 
