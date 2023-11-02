@@ -1,0 +1,7 @@
+INSERT INTO USERS(USR_ID, USR_NAME, USR_LAST_NAME, USR_EMAIL,USR_PASSWORD)
+VALUES (1, 'Daniela', 'Triador', 'danitriador@gmail', 1234);
+
+INSERT INTO USERS(USR_ID, USR_NAME, USR_LAST_NAME, USR_EMAIL,USR_PASSWORD)
+VALUES (2, 'Julieta', 'Villagra', 'julivillagra@gmail', 1234);
+
+SELECT * FROM USERS;
